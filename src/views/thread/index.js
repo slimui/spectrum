@@ -361,11 +361,11 @@ class ThreadContainer extends React.Component<Props, State> {
         return (
           <ThreadViewContainer
             data-cy="thread-view"
-            threadViewContext={threadViewContext}
             constrain={
               threadViewContext === 'slider' ||
               threadViewContext === 'fullscreen'
             }
+            threadViewContext={threadViewContext}
           >
             {shouldRenderThreadSidebar && (
               <Sidebar
@@ -446,10 +446,10 @@ class ThreadContainer extends React.Component<Props, State> {
       return (
         <ThreadViewContainer
           data-cy="thread-view"
-          threadViewContext={threadViewContext}
           constrain={
             threadViewContext === 'slider' || threadViewContext === 'fullscreen'
           }
+          threadViewContext={threadViewContext}
         >
           {shouldRenderThreadSidebar && (
             <Sidebar
